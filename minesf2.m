@@ -12,5 +12,3 @@ cvx_begin quiet
         x >= 0
 cvx_end;
 obj = cvx_optval;
-
-end
