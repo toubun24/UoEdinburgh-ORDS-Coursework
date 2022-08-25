@@ -6,6 +6,8 @@ pfm = mean(ssff);
 
 end
 
+% FS
+
 %{
 n = 100000; L = 10100; B = 10000;
 tic
@@ -14,9 +16,9 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 1. the same optimization sample:
+% 1. Performances with limited selectable sample size:
 
-% 1.1. benchmark
+% 1.1. SP
 
 %{
 n = 100; L = 10100; B = 10000;
@@ -34,7 +36,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 1.2. k-means
+% 1.2. KM
 
 %{
 n1 = 100000; n2 = 100; L = 10100; B = 10000;
@@ -58,7 +60,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 1.3. aggregation sampling
+% 1.3. AS
 
 %{
 n1 = 100000; n2 = 100; L = 10100; B = 10000;
@@ -82,7 +84,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 1.4. iterative (sequential) reduction
+% 1.4. IR
 
 %{
 n1 = 100000; n2 = 100; L = 10100; B = 10000; Lcoef = 0.5;
@@ -110,7 +112,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 1.5. importance sampling
+% 1.5. IS
 
 %{
 n1 = 100000; n2 = 100; L = 10100; B = 10000;
@@ -124,9 +126,9 @@ n1 = 100000; n2 = 1000; L = 10100; B = 10000;
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 2. the same utilized sample (1000/10000):
+% 2. Performances with limited accessible sample size:
 
-% 2.1. benchmark
+% 2.1. SP
 
 %{
 n = 1000; L = 10100; B = 10000;
@@ -144,7 +146,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 2.2. k-means
+% 2.2. KM
 
 %{
 n = 1000; p = 0.1; L = 10100; B = 10000;
@@ -170,7 +172,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 2.3. aggregation sampling
+% 2.3. AS
 
 %{
 n = 1000; p = 0.1; L = 10100; B = 10000;
@@ -196,7 +198,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 2.4. iterative (sequential) reduction
+% 2.4. IR
 
 %{
 n = 1000; p = 0.1; L = 10100; B = 10000; Lcoef = 0;
@@ -226,7 +228,7 @@ toc
 [pfm] = perform(retm, x, L, B)
 %}
 
-% 2.5. importance sampling
+% 2.5. IS
 
 %{
 n = 1000; p = 0.1; L = 10100; B = 10000;
