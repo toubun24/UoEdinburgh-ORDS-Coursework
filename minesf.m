@@ -13,7 +13,3 @@ cvx_begin quiet
         x >= 0
 cvx_end;
 obj = cvx_optval;
-
-end
-
-% [obj, x] = minesf(retm, 10, 10100, 10000)
