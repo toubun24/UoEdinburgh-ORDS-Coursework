@@ -51,6 +51,3 @@ while true
         M = size(Nas, 1);
     end
 end
-end
-
-% [itesam, x, v] = itered(retm, 100, 1000, 10100, 10000, 0.5)
