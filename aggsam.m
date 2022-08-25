@@ -22,5 +22,3 @@ for i = 1 : M
     end
 end
 agg = agg / aggnum;
-
-% [agg, sam] = aggsam(retm, 1000, 1.01)
