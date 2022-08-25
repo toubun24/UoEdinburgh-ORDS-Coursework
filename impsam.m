@@ -28,7 +28,3 @@ tic
 [obj, x] = minesf2(Omegas, N, L, B, pis);
 toc
 obj2 = perform(Omegas, x, L, B);
-
-end
-
-% [obj, x, obj2] = impsam(retm, 1000, 100, 10100, 10000)
